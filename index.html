@@ -9,8 +9,10 @@
 
 <body>
 
+    <!-- Header Section -->
     <header>
 
+        <!-- Navigation Bar -->
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -22,10 +24,14 @@
 
     </header>
 
+    <!-- Main Content -->
     <main>
 
+        <!-- Hero Section -->
         <section id="home">
+
             <h1>Hello, I am Vasu Kothadiya</h1>
+
             <h2>Aspiring Full Stack Developer</h2>
 
             <p>
@@ -33,9 +39,12 @@
                 I am interested in Web Development,
                 Python, Data Analytics, and Cyber Security.
             </p>
+
         </section>
 
+        <!-- About Section -->
         <section id="about">
+
             <h2>About Me</h2>
 
             <p>
@@ -43,9 +52,12 @@
                 Web Development, Python, and Data Analytics.
                 I enjoy building projects and learning new technologies.
             </p>
+
         </section>
 
+        <!-- Skills Section -->
         <section id="skills">
+
             <h2>Skills</h2>
 
             <ul>
@@ -56,17 +68,22 @@
                 <li>Excel</li>
                 <li>Power BI</li>
             </ul>
+
         </section>
 
+        <!-- Contact Section -->
         <section id="contact">
+
             <h2>Contact Me</h2>
 
             <p>Email: vasukothadiya04@gmail.com</p>
+
             <p>Phone: +91 78029 75378</p>
 
             <p>
                 GitHub:
-                <a href="https://github.com/vasukothadiya" target="_blank"> Visit GitHub
+                <a href="https://github.com/vasukothadiya" target="_blank">
+                    Visit GitHub
                 </a>
             </p>
 
@@ -76,13 +93,74 @@
                     Visit LinkedIn
                 </a>
             </p>
+
+            <h3>Contact Form</h3>
+
+            <form id="contactForm">
+
+                <!-- Full Name -->
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" name="fullname" id="fullname"  pattern="[A-Za-z ]+" placeholder="Enter your full name" required> <br><br>
+
+                <label for="email">Email Address:</label><br>
+                <input type="email" name="email" id="email" placeholder="vasu@gmail.com" required> <br><br>
+
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" name="phone" id="phone"  pattern="[0-9]{10}" placeholder="1234567890" required> <br><br>
+
+                <label for="subject">Subject:</label><br>
+                <input type="text" name="subject" id="subject" placeholder="Enter Subject" required> <br><br>
+               
+                <label for="message">Message:</label><br>
+                <textarea name="message" id="message" placeholder="Enter your message" required></textarea> <br><br>
+                
+                <button type="submit">Submit</button>
+
+                <button type="reset">Reset</button>
+
+            </form>
+
         </section>
 
     </main>
 
     <footer>
+
         <p>© 2026 Vasu Kothadiya. All Rights Reserved.</p>
+
     </footer>
+
+    <script>
+
+        const form = document.getElementById("contactForm");
+
+        form.addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+            const fullname = document.getElementById("fullname").value;
+
+            const email = document.getElementById("email").value;
+
+            const phone = document.getElementById("phone").value;
+
+            const subject = document.getElementById("subject").value;
+
+            const message = document.getElementById("message").value;
+
+            console.log("Full Name:", fullname);
+
+            console.log("Email:", email);
+
+            console.log("Phone:", phone);
+
+            console.log("Subject:", subject);
+
+            console.log("Message:", message);
+
+        });
+
+    </script>
 
 </body>
 
