@@ -1,27 +1,22 @@
 # Personal Portfolio Website
 
-This project is created as part of the Web Development Internship Tasks.
+This project is created as part of Web Development Internship Tasks.
 
 ## Technologies Used
 - HTML5
-- Basic JavaScript
+- CSS3
+- Bootstrap 5
+- JavaScript
 
 ## Features
-- Navigation Bar
-- Hero Section
+- Responsive Navigation Bar
+- Styled Hero Section
 - About Section
-- Skills Section
-- Contact Section
-- Contact Form
+- Skills Cards
+- Styled Contact Form
 - Form Validation
-- Console Form Submission Handling
-
-## Form Fields
-- Full Name
-- Email Address
-- Phone Number
-- Subject
-- Message
+- Console Submission Handling
+- Responsive Layout
 
 ## Validation Used
 - Required Fields
